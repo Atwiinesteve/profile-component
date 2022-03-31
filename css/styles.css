@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --Dark_cyan: hsl(185, 75%, 39%);
+  --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+  --Dark_grayish_blue: hsl(227, 10%, 46%);
+  --Dark_gray: hsl(0, 0%, 59%);
+  --Dark_gray2: hsl(0, 0%, 91%);
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--Dark_cyan);
+  background-image: url("/images/bg-pattern-bottom.svg");
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.card .card--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/bg-pattern-card.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+}
+
+.card .card--header img.img--avatar {
+  position: absolute;
+  top: 7rem;
+  left: 37%;
+  border-radius: 50%;
+  border: 6px solid white;
+}
+
+.card .card--text--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .card--text--content h3 {
+  position: absolute;
+  top: 15rem;
+  left: 37%;
+}
+
+.card .card--text--content h3 span {
+  color: var(--Dark_gray);
+}
+
+.card .card--text--content h3.country {
+  position: absolute;
+  text-align: center;
+  top: 17rem;
+  left: 45%;
+  color: var(--Dark_gray);
+}
+
+.card .card--footer {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  border-top: 1px solid var(--Dark_gray2);
+}
+
+.card .card--footer .follower--header,
+.card .card--footer .likes--header,
+.card .card--footer .photos--header {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  padding-top: 1rem;
+}
+
+.card .card--footer p.followers--text,
+.card .card--footer p.likes--text,
+.card .card--footer p.photos--text {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=styles.css.map */
