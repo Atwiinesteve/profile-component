@@ -1,43 +1,49 @@
 // Import Statements
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Big+Shoulders+Display:wght@600&family=Karla:wght@500&family=Kumbh+Sans:wght@500;600&family=Lexend:wght@500&family=Open+Sans:wght@600&family=Outfit:wght@400;500&family=Poppins:wght@500;600&family=Roboto:wght@500&family=Rubik&display=swap');
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
-	--Dark_cyan: hsl(185, 75%, 39%);
-	--Very_dark_desaturated_blue: hsl(229, 23%, 23%);
-	--Dark_grayish_blue: hsl(227, 10%, 46%);
-	--Dark_gray: hsl(0, 0%, 59%);
-	--Dark_gray2: hsl(0, 0%, 91%);
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+    --Dark_gray2: hsl(0, 0%, 91%);
 }
 
 body,
 html {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--Dark_cyan);
     background-image: url('/images/bg-pattern-bottom.svg');
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .card {
-	width: 400px;
-	height: 400px;
+    width: 400px;
+    height: 400px;
     background: #fff;
     border-radius: 8px;
     position: relative;
-
     .card--body {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .card--header {
         display: flex;
         flex-direction: column;
@@ -50,7 +56,6 @@ html {
         height: 20vh;
         width: 100%;
         position: relative;
-
         img.img--avatar {
             position: absolute;
             top: 7rem;
@@ -59,24 +64,24 @@ html {
             border: 6px solid rgb(255, 255, 255);
         }
     }
-
     .card--text--content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-
         h3 {
+            font-family: 'Lexend', sans-serif;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            font-weight: bold;
             position: absolute;
             top: 15rem;
             left: 37%;
-
             span {
                 color: var(--Dark_gray);
             }
         }
-
         h3.country {
             position: absolute;
             text-align: center;
@@ -85,7 +90,6 @@ html {
             color: var(--Dark_gray);
         }
     }
-
     .card--footer {
         width: 100%;
         padding: 0 1rem;
@@ -96,7 +100,7 @@ html {
         position: absolute;
         bottom: 1rem;
         border-top: 1px solid var(--Dark_gray2);
-
+        font-family: 'Lexend', sans-serif;
         .follower--header,
         .likes--header,
         .photos--header {
@@ -105,12 +109,12 @@ html {
             font-size: 1.2rem;
             margin-bottom: 0.7rem;
             padding-top: 1rem;
-
         }
-
         p.followers--text,
         p.likes--text,
         p.photos--text {
+            font-family: 'Lexend', sans-serif;
+            font-weight: 900;
             opacity: 0.6;
         }
     }
